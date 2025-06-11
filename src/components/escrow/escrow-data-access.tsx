@@ -86,7 +86,7 @@ export function useEscrowProgram() {
     mutationFn: async () => {
       // Define the mint for the asset (devnet usdc now)
       const mintX = new PublicKey(
-        "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+        "Fw4L5uUxszLQz7G8jpxm8ywyk9Rin2mHE2mCCaiVj5cT"
       );
       // Get the associated token address for the maker
       const makerAtaX = await getAssociatedTokenAddress(
@@ -111,7 +111,7 @@ export function useEscrowProgram() {
       const vault = await getAssociatedTokenAddress(mintX, escrow, true);
       // Define the mint for the other token (random mint I created)
       const mintY = new PublicKey(
-        "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
+        "9s5kXmh9ngHabsCfVb6muK2a53PUgsHavdV9e916i461"
       );
       // Get the associated token address for the maker
       const makerAtaY = await getAssociatedTokenAddress(
